@@ -1,0 +1,24 @@
+<!-- Main 프로세스에서 열 html파일. 폴더가 .tmp가 아니라 dist이다 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="node_modules/photon/dist/css/photon.css"> 
+    <style type="text/css">
+        #app {
+            position: absolute;
+            top: 8px;
+            bottom: 8px;
+            left: 8px;
+            right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div id="app" class="window-content"></div>
+    </div>
+    <script>require("./dist/renderer/app.js")</script>
+</body>
+</html>
